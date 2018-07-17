@@ -1,0 +1,16 @@
+{
+    "default_hs_url": "{{DEFAULT_HS_URL}}",
+    "default_is_url": "{{DEFAULT_IS_URL}}",
+    "brand": "{{BRAND}}",
+    "integrations_ui_url": "{{INTEGRATIONS_UI_URL}}",
+    "integrations_rest_url": "{{INTEGRATIONS_REST_URL}}",
+    "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
+    "enableLabs": true,
+    "default_theme": "{{DEFAULT_THEME}}",
+    "roomDirectory": {
+        "servers": [
+            "{{DEFAULT_HS_URL}}",
+            "matrix.org"
+        ]
+    }
+}
