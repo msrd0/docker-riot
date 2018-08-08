@@ -41,7 +41,7 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	&& curl -fSL https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc \
 	&& curl -fSL https://github.com/vector-im/riot-web/releases/download/v$RIOT_VERSION/riot-v$RIOT_VERSION.tar.gz -o riot.tar.gz \
 	&& mkdir -p /opt/riot \
-	&& tar -xz --strip-components=1 riot.tar.gz -C /opt/riot \
+	&& tar xfz riot.tar.gz --strip-components=1 -C /opt/riot \
 	&& rm -f riot.tar.gz \
 	&& export GNUPGHOME="$(mktemp -d)" \
 	&& found=''; \
